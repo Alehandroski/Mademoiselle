@@ -1,0 +1,49 @@
+img{
+    max-width: 100%;
+}
+
+p{
+    font-weight: 300;
+}
+
+
+body{
+    font-family: $lato;
+    font-weight: 400;
+}
+
+.section-title{
+    font-family: $bodoni;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.section-title.madem-title:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 7.4rem;
+    height: 1px;
+    background-color: #ECD9D9;
+    top: 3rem;
+    bottom: 0;
+    left: 0;
+}
+
+.single-title{
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 5rem;
+}
+
+.ratio{
+    display: block;
+    overflow: hidden;
+}
+
+.ratio > *{
+    object-fit: cover;
+}

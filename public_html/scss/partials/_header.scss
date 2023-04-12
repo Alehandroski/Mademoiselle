@@ -1,0 +1,102 @@
+header{
+    .navbar-brand{
+        max-width: 196px;
+        img{
+            display: block;
+        }
+    }
+
+    .navbar-toggler{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .navbar-nav{
+        border-bottom: 1px solid $primary;
+        @media(min-width:992px){
+            border-bottom: none;
+        }
+        .nav-item{
+            &:not(:last-of-type){
+                border-bottom: 1px solid $primary;
+                @media(min-width:992px){
+                    border-bottom: none;
+                    margin-right: 72px;
+                }
+            }
+            @media(min-width:992px){
+                position: relative;
+                &:hover{
+                    .submenu{
+                        opacity: 1;
+                        transform: rotateX(0) perspective(1000px);
+                    }
+                }
+            }
+            .nav-link{
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                letter-spacing: 1px;
+                position: relative;
+                text-transform: uppercase;
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    background-color: darken($primary, 20%);
+                    left: 0;
+                    bottom: -2px;
+                    transition: 0.4s linear;
+                }
+                &.active:after{
+                    width: 100%;
+                }
+                &:hover:after,{
+                    width: 100%;
+                }
+                .toggle-submenu{
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    @media(min-width:992px){
+                        display: none;
+                    }
+                }
+            }
+             .submenu{
+                padding-left: 20px;
+                display: none;
+                transition: 0.3s linear;
+                @media(min-width:992px){
+                    display: block !important;
+                    transform:rotateX(-90deg);
+                    transform-origin: 0 0;
+                    opacity: 0;
+                    position: absolute;
+                    top:100%;
+                    left: 0;
+                    padding-left: 0px;
+                    
+                }
+                .nav-link{
+                    &:hover:after{
+                        width: 0;
+                    }
+                    @media(min-width:992px){
+                        white-space: nowrap;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+}
