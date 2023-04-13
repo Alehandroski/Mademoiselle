@@ -32,6 +32,16 @@ $('.navbar-nav').on('click', '.toggle-submenu', function(e){
 });
 
 
+   if ($('.professionals-slider').length > 0) {
+        $('.professionals-slider').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 3000
+        });
+    }
+
 
 /*
 

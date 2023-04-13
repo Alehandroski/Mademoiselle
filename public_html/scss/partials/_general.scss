@@ -4,7 +4,9 @@ img{
 
 p{
     font-weight: 300;
+    margin-bottom: 0;
 }
+
 
 
 body{
@@ -14,10 +16,19 @@ body{
 
 .section-title{
     font-family: $bodoni;
-    font-size: 3rem;
-    line-height: 4.5rem;
-    letter-spacing: 5px;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 3px;
     position: relative;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+
+    @media(min-width:992px){
+        font-size: 3rem;
+        line-height: 4.5rem;
+        letter-spacing: 5px;
+        margin-bottom: 7.5rem;
+    }
 }
 
 .section-title.madem-title:after{
@@ -27,9 +38,11 @@ body{
     width: 7.4rem;
     height: 1px;
     background-color: #ECD9D9;
-    top: 3rem;
-    bottom: 0;
+    bottom: -1.5rem;
     left: 0;
+    @media(min-width:992px){
+        bottom: -2.5rem;
+    }
 }
 
 .single-title{
@@ -46,4 +59,18 @@ body{
 
 .ratio > *{
     object-fit: cover;
+}
+
+.btn-services{
+    padding: 13px 34px;
+    border: 1px solid $body-color;
+    color: $body-color;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    &:hover{
+        color: $primary;
+        background-color: $body-color;
+    }
 }

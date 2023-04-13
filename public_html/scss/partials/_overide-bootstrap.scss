@@ -11,16 +11,12 @@ $font-size-base:1.6rem;
 $grid-gutter-width: 1.2rem;
 //$link-color:  $primary ;
 $link-decoration:  none;
-$navbar-light-toggler-border-color:darken($primary, 30%);
-$navbar-light-icon-color: darken($primary, 30%);
+$navbar-light-toggler-border-color:darken($primary, 20%);
+$navbar-light-icon-color: darken($primary, 20%);
 
 $navbar-light-color:  #1e1e1e;
-$navbar-light-hover-color:darken($primary, 30%);
+$navbar-light-hover-color:darken($primary, 20%);
 $navbar-light-active-color: $body-color;
-
-
-
-
 
 
 $grid-breakpoints: (
@@ -45,8 +41,8 @@ $container-max-widths: (
 $aspect-ratios: (
   "1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
-  "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%)
+  "16x9": 66.49%,
+  "21x9": 80.82%
 );
 
 $spacer: 1rem;
