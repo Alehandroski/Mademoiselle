@@ -1,0 +1,33 @@
+.blog-list{
+    @media(min-width:992px){
+        padding-top: 15px;
+    }
+    .trend-item-wrapper{
+        padding: 22px 18px 57px 18px;
+        border: 1px solid #fff;
+        width: 90%;
+        margin-inline:auto;
+        margin-top: -80px;
+        z-index: 1000;
+        background-color: #fff;
+        .trend-item-wrapper-date{
+            font-family: $bodoni;
+            font-style: italic;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.7rem;
+        }
+        .trend-item-wrapper-data{
+            .trend-item-wrapper-title{
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                text-transform: uppercase;
+                color: $body-color !important;
+                max-width: 276px;
+                margin-inline: auto;
+            }
+        }
+
+    }
+}
