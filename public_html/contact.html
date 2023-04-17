@@ -34,15 +34,123 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
 
+        <!-- header start -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg bg-white py-2 pt-lg-6 pb-lg-6">
+                <div class="container">
+                    <a class="navbar-brand" href="homepage.html">
+                        <img src="./img/logo.png" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse pt-3 pt-lg-0" id="main-menu">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="about.html">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="services.html">
+                                    services
+                                    <span class="fas fa-plus toggle-submenu"></span>
+                                </a>
+                                <ul class="submenu list-unstyled pt-2">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Lip Filling</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Female Haircut</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Day and night makeup</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Waxing</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  active" href="contact.html">contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header><!-- header end -->
+
+        <!-- contact-section start -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12 col-lg-6">
+                        <form class="contact-form h-100 animation" method="post" action="" data-animation="slideRight">
+                            <h2 class="contact-form-title">please contact us using the form bellow</h2>
+                            <div class="row">
+                                <div class="form-group mb-4">
+                                    <input class="form-control" type="text" name="contact_name" value="" placeholder="Name and surname*">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input class="form-control" type="email" name="contact_email" value="" placeholder="Email address*">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input class="form-control" type="text" name="contact_subject" value="" placeholder="Subject*">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="form-group mb-6">
+                                    <textarea class="form-control" name="contact_message"  placeholder="Enter your message*"></textarea>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="form-group mb-4 mb-lg-0">
+                                    <button type="submit" name="send" value="yes" class="btn btn-services">Send message</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                       
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11142.279748506704!2d151.18946728656175!3d-33.87369519846408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssydney%20theatre!5e0!3m2!1ssr!2srs!4v1681218250647!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ratio ratio-21x9 h-100"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section><!-- contact section end -->
+
+
+        <!-- contact-info start -->
+        <section class="contact-info bg-primary py-10">
+            <div class="container text-center">
+                <div class="contact-info-wrapper">
+                    <p class="contact-info-wrapper-address mb-3">146 douglas dale suite 343</p>
+                    <a href="tel:560-748-5959" class="mb-3 contact-info-wrapper-phone d-block">560-748-5959</a>
+                    <a href="mailto:cullen_mueller@yahoo.com" class="contact-info-wrapper-email d-block">cullen_mueller@yahoo.com</a>
+                </div>
+            </div>
+        </section><!-- contact-info end -->
 
 
 
 
 
-
-
-
-
+        <!-- footer start -->
+        <footer class="text-center">
+            <div class="container">
+                <nav class="social mb-4">
+                    <a href="https://facebook.com" target="_blank" class="fa-brands fa-facebook-f"></a>
+                    <a href="https://twitter.com" target="_blank" class="fa-brands fa-twitter"></a>
+                    <a href="https://instagram.com" target="_blank" class="fa-brands fa-instagram"></a>
+                </nav>
+                <p class="copyright">Copyright &copy; 2019 
+                    <a href="homepage.html">mademoiselle</a>
+                </p>
+            </div>
+        </footer><!-- footer end -->
 
 
 
@@ -50,10 +158,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         <script src="https://kit.fontawesome.com/62d5ea937d.js" crossorigin="anonymous"></script>
         <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
-        
+
         <script src="js/owl.carousel.min.js" type="text/javascript"></script>
         <script src="js/jquery.validate.min.js" type="text/javascript"></script>
-        
+
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>

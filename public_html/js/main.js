@@ -43,7 +43,7 @@ $('.navbar-nav').on('click', '.toggle-submenu', function(e){
     }
 
 
-/*
+
 
     if ($('.contact-form').length > 0) {
         $(function () {
@@ -57,34 +57,24 @@ $('.navbar-nav').on('click', '.toggle-submenu', function(e){
                     $(element).closest('.form-group').addClass("is-valid").removeClass("is-invalid");
                 },
                 rules: {
-                    name: {
+                    contact_name: {
                         required: true
                     },
-                    email: {
+                    contact_email: {
                         required: true,
                         email: true
                     },
-                    message: {
-                        required: true,
-                        maxlength: 255
-
+                    contact_subject:{
+                        required:true
+                    },
+                    contact_message: {
+                        required: true
+                        
                     }
                 },
-                messages: {
-                    name: {
-                        required: 'Name* is required field!!!'
-                    },
-                    email: {
-                        required: 'Email* is required field!!!',
-                        email: 'Please insert valid Email address!!!'
-                    },
-                    message: {
-                        required: 'Message* is required field!!!',
-                        maxlength: 'Max Message length is 255 characters !!!'
+               
 
-                    }
-
-                },
+                
                 errorElement: 'p',
                 errorPlacement: function (error, element) {
                     error.appendTo($(element).closest('.form-group').find('.invalid-feedback'));
@@ -92,8 +82,8 @@ $('.navbar-nav').on('click', '.toggle-submenu', function(e){
 
             });
         });
-    }//Form Validation
+    }
 
-*/
+
 
 });
