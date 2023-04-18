@@ -1,4 +1,5 @@
 .contact-section{
+
     padding-top: 15rem;
     margin-bottom: 5rem;
     @media(min-width:758px){
@@ -36,14 +37,28 @@
 
     }
 
-    iframe{
-      
-        @media(min-width:992px){
-            left: 20%;
+    .contact-section-wrapper{
+        position: relative;
+        .row{
+            > div{
+                &:nth-of-type(2n){
+                    @media(min-width:992px){
+                        flex: 0 0 50%;
+                        width: 50%;
+                        position: absolute;
+                        top:0;
+                        right: 0;
+                        height: 100%;
+                        overflow: hidden;
+                        padding-left: 110px;
 
+                    }
+                }
+               
+}
+               
+            }
         }
 
-    }
-   
 
-}
+    }

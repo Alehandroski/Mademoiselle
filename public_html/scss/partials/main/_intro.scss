@@ -36,3 +36,12 @@
         margin-bottom: 8.8rem;
     }
 }
+
+
+.intro.error-section{
+    margin-bottom: 0;
+    @media(min-width:1200px){
+        padding: 366px 0 278px 0;
+        
+    }
+}
