@@ -14,6 +14,9 @@ body{
     font-weight: 400;
 }
 
+
+
+
 .section-title{
     font-family: $bodoni;
     font-size: 2.5rem;
@@ -56,7 +59,10 @@ body{
 }
 
 .btn-services{
-    padding: 13px 34px;
+    padding: 13px 12px;
+    @media(min-width:576px){
+        padding: 13px 34px;
+    }
     border: 1px solid $body-color;
     color: $body-color;
     font-size: 1.4rem;

@@ -1,4 +1,6 @@
 header{
+    background-color: #fff;
+    transition: 0.3s linear;
     .navbar-brand{
         max-width: 196px;
         img{
@@ -75,6 +77,9 @@ header{
                 display: none;
                 transition: 0.3s linear;
                 @media(min-width:992px){
+                    background-color: #fff;
+                }
+                @media(min-width:992px){
                     display: block !important;
                     transform:rotateX(-90deg);
                     transform-origin: 0 0;
@@ -99,4 +104,14 @@ header{
     }
 
 
+}
+header.lavanda{
+    background-color: $primary ;
+    .navbar{
+        @media(min-width:1200px){
+             padding: 2.5rem 0 !important;
+             transition: 0.3s linear;
+        }
+       
+    }
 }

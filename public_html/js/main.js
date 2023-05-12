@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+function checkHeader() {
+        let scrollSize = $(window).scrollTop();
+        if (scrollSize > 100) {
+            $('header').addClass('lavanda');
+        } else {
+            $('header').removeClass('lavanda');
+        }
+    }
+    checkHeader();
+    $(window).scroll(function () {
+        checkHeader();
+        animation();
+    });
 
 
 
@@ -21,9 +34,7 @@ $(document).ready(function () {
 
 
     animation();
-    $(window).scroll(function () {
-        animation();
-    });
+    
 
 $('.navbar-nav').on('click', '.toggle-submenu', function(e){
     e.preventDefault();
